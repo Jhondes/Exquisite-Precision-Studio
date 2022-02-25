@@ -4,7 +4,7 @@ import React from "react";
 const AboutUs = () => {
   return (
     <div className="about-us">
-    <div className="container py-5">
+    <div id="about" className="container py-5">
       <div className="row">
       <h1 className="text-uppercase text-center py-5">About Us</h1>
             <div className="image-box-wrapper row justify-content-center">

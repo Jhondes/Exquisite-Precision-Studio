@@ -15,7 +15,10 @@
     "react-particles-js": "^3.6.0",
     "react-responsive-carousel": "^3.2.22",
     "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.5",
+    "react-share": "^4.4.0",
     "react-typed": "^1.2.0",
+    "reactjs-popup": "^2.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

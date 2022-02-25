@@ -1,11 +1,12 @@
  import React from "react";
  import logo from "../logo.png";
+ import {Link} from "react-scroll";
  // REACT FONTAWESOME IMPORTS
  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  import { faBars } from "@fortawesome/free-solid-svg-icons";
  const Navbar = () => {
    return (
-    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark fixed-top">
       <div className="container">
 
      
@@ -18,19 +19,19 @@
 		  <ul class="navbar-nav ">
 			
 			<li class="nav-item">
-			  <a class="nav-link" href="#">about</a>
+			  <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">about</Link>
 			</li>			
       
 			<li class="nav-item">
-			  <a class="nav-link" href="#">services</a>
+			  <Link smooth={true} to="services" offset={-110} className="nav-link" href="#">services</Link>
 			</li>			
       
 			<li class="nav-item">
-			  <a class="nav-link" href="#">portfolio</a>
+			  <Link smooth={true} to="portfolio" offset={-110} className="nav-link" href="#">portfolio</Link>
 			</li>			
       
 			<li class="nav-item">
-			  <a class="nav-link" href="#">contact</a>
+			  <Link smooth={true} to="contacts" offset={-110} className="nav-link" href="#">contact</Link>
 			</li>			
 		  </ul>		  
 		</div>

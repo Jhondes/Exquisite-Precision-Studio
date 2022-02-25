@@ -9,18 +9,37 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
 // REACT POPUPBOX
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+
 
 
 
 
 const Portfolio = () => {
 
+  const PopupExample = () => (
+    <Popup trigger={<button>Trigger</button>} position="top left">
+      {close => (
+        <div>
+          Content here
+          <a className="close" onClick={close}>
+            &times;
+          </a>
+        </div>
+      )}
+    </Popup>
+  );
 
 
   return (
 
     
-    <div className="portfolio-wrapper">
+
+    
+
+    
+    <div id="portfolio" className="portfolio-wrapper">
         <div className="container">
           
             <h1 className="text-uppercase text-center py-5">Portfolio</h1>
@@ -60,6 +79,7 @@ const Portfolio = () => {
            
             </div>                  
         </div>
+        
     </div>
   );
 }

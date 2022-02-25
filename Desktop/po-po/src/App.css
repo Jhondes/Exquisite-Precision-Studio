@@ -6,8 +6,10 @@
   --primary-dark: #ffffff00;
   --primary-black: #000000;
   --primary-grey: #6c757d;
-  --primary-transparent-black: rgba(0,0,0,0.7);
+  --primary-transparent-black: rgba(0,0,0,0.9);
   --primary-teal-green: #006d5b;
+  --primary-transparent-grey: #8cb8b0;
+  --primary-dim-dark: #343a40;
 }
 
 
@@ -53,7 +55,7 @@ nav ul li {
   }
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
 border-top: 0.1875rem solid var(--primary-teal-green);
 }
 
@@ -68,7 +70,7 @@ border-top: 0.1875rem solid var(--primary-teal-green);
   background: url(bgp.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -228,7 +230,7 @@ a:active { text-decoration: none; }
 
  .services .icon {
    font-size: 2.5rem;
-   color: var(--primary-white);
+   color: var(--primary-teal-green);
    position: absolute;
    margin-top: 3%;
    margin-left: -1.2rem;
@@ -391,7 +393,7 @@ a:active { text-decoration: none; }
     text-align: center;
     max-width: 53.125rem;
     margin: 0 auto 2rem auto;
-    background: var(--primary-black);
+    background: var(--primary-transparent-black);
 
   }
 
@@ -575,3 +577,32 @@ a:active { text-decoration: none; }
       padding: 0 0.4rem;
     }
   }
+
+
+  /***************** FOOTER COMPONENT *******************/
+
+  .footer {
+    background: var(--primary-grey);
+    color: var(--primary-black);
+    padding: 3rem;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: var(--primary-black);
+
+  }
+
+  .footer a:hover {
+    text-decoration: none;
+    color: var(--primary-teal-green);
+    cursor: pointer;
+  }
+
+  .footer p {
+    margin-bottom: 0;
+  }
+
+
+
+  

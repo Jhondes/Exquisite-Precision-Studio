@@ -5,6 +5,7 @@ import Typed from "react-typed";
 
 const Header = () => {
 
+  
 
   return (
     <div className="header-wrapper">
