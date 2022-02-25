@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --primary-white:#fff;
+  --primary-red: #931F06;
+  --primary-dark: #ffffff00;
+  --primary-black: #000000;
+  --primary-grey: #6c757d;
+  --primary-transparent-black: rgba(0,0,0,0.9);
+  --primary-teal-green: #006d5b;
+  --primary-transparent-grey: #8cb8b0;
+  --primary-dim-dark: #343a40;
+}
+
+
+body {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+/******************************* NAVBAR ********************************/
+.logo {
+  width: 16.25rem;
+}
+
+/*-----------MENU LINKS------------*/
+nav a.nav-link {
+  font-size: .8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+
+
+
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 00.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+border-top: 0.1875rem solid var(--primary-teal-green);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-teal-green);
+}
+
+/******************************* HEADER ********************************/
+
+.header-wrapper {
+  position: relative;
+  background: url(bgp.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info {
+  display: flex;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-teal-green);
+  text-transform: uppercase;
+}
+
+
+
+/******************************* TYPED TEXT ********************************/
+
+.Typed-text {
+  font-size: 3.2rem;
+  color: var(--primary-white);
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem, !important;
+  }
+  .Typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+
+/******************************* HEADER MAIN OFFER BUTTON ********************************/
+
+.btn-main-offer {
+border: 1px solid var(--primary-teal-green);
+text-transform: uppercase;
+border-radius: 0;
+padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+color: var(--primary-teal-green);
+margin: 2rem;
+font-size: 1rem;
+
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-dark);
+  color:var(--primary-white);
+  transition: .2s ease-in-out;
+  color: var(--primary-white);
+}
+
+/******************************* PARTICLES JS ********************************/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+}
+
+
+
+
+
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+/******************************* ABOUTUS KNOW MORE BUTTON ********************************/
+
+.btn-know-more {
+  border: 1px solid var(--primary-teal-green);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 0rem;
+  font-size: 1rem;
+ 
+  
+  }
+  
+  .btn-know-more:hover {
+    text-decoration: none;
+    background-color: var(--primary-dark);
+    color:var(--primary-teal-green);
+    transition: .2s ease-in-out;
+    
+  }
+
+
+  .about-heading {
+    color: var(--primary-teal-green);
+    text-transform: uppercase;
+  }
+
+
+  .about-us {
+    background: var(--primary-dark);
+    padding: 3rem 0;
+    position: relative;
+    background: var(--primary-black);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    
+
+  }
+
+
+  @media (max-width: 468px) {
+        
+  }
+
+
+
+
+/******************************* SERVICES ********************************/
+ .services {
+   text-align: center;
+   padding-bottom: 2rem;
+
+ } 
+
+ .services {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+  position: relative;
+  background: var(--primary-black);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  
+
+}
+
+
+ .services .icon {
+   font-size: 2.5rem;
+   color: var(--primary-teal-green);
+   position: absolute;
+   margin-top: 3%;
+   margin-left: -1.2rem;
+   
+   
+
+ }
+
+
+.servicestexts {
+    font-size: 1rem;
+    color: var(--primary-white);
+    
+  }
+
+  .services .box:hover {
+    background: var(--primary-teal-green);
+    border-bottom: 0.3125rem solid var(--primary-black);
+  }
+
+
+
+  .services .box {
+    height: 13rem;
+    border-bottom: 0.3125rem solid var(--primary-teal-green);
+    padding: 0.625rem;
+    margin-bottom: 1.875rem;
+    background: var(--primary-black);
+    transition: 0.3s ease-in-out;
+  }
+
+  @media(max-width: 768px) {
+    .services .box {
+      width: 100%;
+    }
+  }
+  
+
+  .services .box:hover .icon {
+    color: var(--primary-black);
+  }
+
+  .services .box:hover .servicestexts {
+    color: var(--primary-black);
+  }
+
+  .py-5 {
+    color: var(--primary-white);
+  }
+
+
+  /******************************* PORTFOLIO ********************************/
+
+  .portfolio-wrapper {
+    background: var(--primary-dark);
+    padding: 3rem 0;
+    position: relative;
+    background: url(rb2.jpg) no-repeat;
+    
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    
+
+  }
+
+
+  @media(max-width: 768px) {
+    .portfolio-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .portfolio-image {
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid var(--primary-teal-green);
+    
+    
+  }
+
+
+  @media(max-width: 768px) {
+    .portfolio-image {
+      width: 100%;
+    }
+  }
+
+  .portfolio-image-box {
+    position: relative;
+    margin: 1rem;
+  }
+
+
+  
+  
+
+  /******************************* OVERFLOW BOX ********************************/
+  .overflow {
+    position: absolute;
+    opacity: 0;
+    background: var(--primary-black);
+    width: 15rem;
+    height: 15rem;
+    top: 0;
+    border: 1px solid var(--primary-teal-green);
+    cursor: pointer;
+  }
+
+  @media(max-width: 768px) {
+    .overflow {
+      width: 100%;
+    }
+  }
+
+  .portfolio-image-box:hover .overflow {
+    opacity: 60%;
+    transition: 0.3s ease-in-out;
+  }
+
+  .portfolio-image-box:hover .overflow {
+    opacity: 60%;
+    transition: 0.3s ease-in-out;
+  }
+
+  .portfolio-icon {
+    position: absolute;
+    opacity: 0;
+    margin-left: -8rem;
+    margin-top: 7rem;
+    color: var(--primary-teal-green);
+    font-size: 1.5rem;
+  }
+
+  .portfolio-image-box:hover .portfolio-icon {
+    opacity: 70%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  /****************** TESTIMONIALS *******************/
+  .testimonials {
+    background: url(mm.jpeg) no-repeat;
+    background-size: cover;
+    background-color: var(--primary-white);
+    text-align: center;
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .testimonials h1 {
+    color: var(--primary-white);
+    padding: 3rem 0;
+    text-transform: uppercase;
+  }
+
+  .testimonials-content {
+    text-align: center;
+    max-width: 53.125rem;
+    margin: 0 auto 2rem auto;
+    background: var(--primary-transparent-black);
+
+  }
+
+  .myCarousel {
+    color: var(--primary-white);
+    background: transparent;
+    margin-top: -6%;
+    width: 54%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 17.875rem;
+  }
+
+  .myCarousel h3 {
+    color: var(--primary-teal-green);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .myCarousel p {
+    color: var(--primary-grey);
+
+  }
+
+  .Carousel .slide img {
+    width: 10rem !important;
+    border-radius: 50%;
+  }
+
+  .carousel .slide {
+    background: transparent !important;
+    height: 1000% !important;
+    padding-top: 2rem;
+  }
+
+  .carousel-root {
+    margin: auto !important;
+    margin-top: 3% !important;
+
+  }
+
+  .ava {
+    width: 10rem !important;
+    border-radius: 50%;
+  }
+
+  
+  /****************** CONTACTS *******************/
+
+  
+
+  .contacts {
+    background: var(--primary-black);
+    padding: 3rem 0;
+
+  }
+
+  .contacts h1 {
+    color: var(--primary-white);
+    padding: 1.3rem 0;
+    text-transform: uppercase;
+  }
+
+  .contacts p {
+    color: var(--primary-grey);
+    font-size: 1.2rem;
+  }
+
+  .ci {
+    text-transform: uppercase;
+    text-align: justify;
+    letter-spacing: 1.0975rem;
+    color: var(--primary-teal-green) !important;
+    
+  }
+
+  .ci2 {
+    text-align: justify;
+  }
+
+  .vu {
+    text-transform: uppercase;
+    text-align: justify;
+    letter-spacing: 1.0975rem;
+    color: var(--primary-teal-green) !important;
+    
+  }
+
+  .vu2 {
+    text-align: justify;
+  }
+
+  .fill {
+    text-transform: uppercase;
+    color: var(--primary-teal-green) !important;
+  }
+
+  /****************** INPUTS *******************/
+
+  .contacts {
+    overflow-x: hidden;
+  }
+
+  .line {
+    position: relative;
+    top: -0.8rem;
+    width: 0;
+    height: 0.125rem;
+    background: var(--primary-teal-green);
+    display: inline-block;
+  }
+
+  input:focus+.line, textarea:focus+.line {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+  }
+  
+
+  .contacts input, .contacts textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    resize: none;
+    border: 0;
+    border-bottom: 0.125rem solid var(--primary-grey);
+    border-radius: 0;
+    color: var(--primary-grey);
+    outline: 0 !important;
+    box-shadow: none !important;
+    top: 0;
+    margin-bottom: 1rem;
+    padding-left: 0 !important;
+  }
+
+
+  .contacts .container {
+    padding: 4rem 0;
+
+  }
+
+  .contacts input:focus, .contacts textarea:focus {
+    background: transparent;
+    color: var(--primary-white);
+    border-bottom: 0.125rem solid var(--primary-grey);
+  }
+
+
+  .contacts textarea {
+    height: 12.8rem !important;
+    
+  }
+
+  .contact-btn {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    background: none;
+  }
+
+  input.form-control {
+    margin: -0.2rem 0;
+  }
+
+ textarea.form-control {
+    margin: -0.2rem 0;
+  }
+
+  
+  /****************** MEDIA *******************/
+  
+  
+  @media(max-width: 768px) {
+    .contacts .container {
+      padding: 0 1rem;
+    }
+
+    .contacts p {
+      padding: 0 0.4rem;
+    }
+  }
+
+
+  /***************** FOOTER COMPONENT *******************/
+
+  .footer {
+    background: var(--primary-grey);
+    color: var(--primary-black);
+    padding: 3rem;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: var(--primary-black);
+
+  }
+
+  .footer a:hover {
+    text-decoration: none;
+    color: var(--primary-teal-green);
+    cursor: pointer;
+  }
+
+  .footer p {
+    margin-bottom: 0;
+  }
+
+
+
+  
